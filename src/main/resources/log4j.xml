@@ -12,7 +12,7 @@
     </appender>
 
 
-    <logger name="by.borisevich.recipeBook">
+    <logger name="by.borisevich.book">
         <level value="info"/>
     </logger>
 
