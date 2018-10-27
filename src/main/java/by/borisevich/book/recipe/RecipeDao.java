@@ -12,12 +12,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class RecipeDao {
+class RecipeDao {
 
     private static final Logger logger = LoggerFactory.getLogger(RecipeDao.class);
     private SessionFactory sessionFactory = HibernateSessionFactoryUtil.getSessionFactory();
 
-    public void addRecipe(Recipe recipe) {
+    void addRecipe(Recipe recipe) {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
         session.save(recipe);
@@ -26,7 +26,7 @@ public class RecipeDao {
         logger.info("recipe " + recipe.getTitle() + " added successfully");
     }
 
-    public List<Recipe> listRecipe() {
+    List<Recipe> listRecipe() {
         Session session = sessionFactory.openSession();
         Query query = session.createQuery("from Recipe");
         List<Recipe> recipes = (List<Recipe>) query.list();
@@ -41,7 +41,7 @@ public class RecipeDao {
         return recipes;
     }
 
-    public Recipe getRecipeByTitle(String title) {
+    Recipe getRecipeByTitle(String title) {
         Session session = sessionFactory.openSession();
         Query query = session.createQuery("from Recipe where title = :paramName");
         query.setParameter("paramName", title);
@@ -57,7 +57,7 @@ public class RecipeDao {
         }
     }
 
-    public void updateRecipe(Recipe recipe) {
+    void updateRecipe(Recipe recipe) {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
         session.update(recipe);
@@ -66,7 +66,7 @@ public class RecipeDao {
         logger.info("recipe " + recipe.getTitle() + " updated successfully");
     }
 
-    public void deleteRecipe(String title) {
+    void deleteRecipe(String title) {
         Session session = sessionFactory.openSession();
         Query query = session.createQuery("from Recipe where title = :paramName");
         query.setParameter("paramName", title);

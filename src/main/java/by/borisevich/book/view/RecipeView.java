@@ -4,8 +4,7 @@ import by.borisevich.book.recipe.RecipeController;
 import by.borisevich.book.recipe.Recipe;
 import by.borisevich.book.user.User;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.SelectionAdapter;
-import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.events.*;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -23,6 +22,7 @@ class RecipeView {
 
     RecipeView(MainWindow window) {
         this.window = window;
+
     }
 
     void initTable() {
@@ -40,7 +40,7 @@ class RecipeView {
         categoryColumn.setWidth(150);
 
         TableColumn ingredientsColumn = new TableColumn(mainTable, SWT.CENTER);
-        ingredientsColumn.setText("Ингридиенты");
+        ingredientsColumn.setText("Ингредиенты");
         ingredientsColumn.setWidth(250);
 
         TableColumn colOfPersonColumn = new TableColumn(mainTable, SWT.CENTER);
@@ -81,7 +81,7 @@ class RecipeView {
     void addRecipe() {
         final Shell addRecipeShell = new Shell(window.getDisplay(), SWT.DIALOG_TRIM | SWT.V_SCROLL | SWT.H_SCROLL);
         addRecipeShell.setText("Добавить рецепт");
-        window.initLayout(addRecipeShell, 1);
+        window.initLayout(addRecipeShell);
 
         final RecipeForm form = new RecipeForm(window, addRecipeShell);
 
@@ -125,7 +125,7 @@ class RecipeView {
     void findRecipe(final User user) {
         final Shell findRecipeShell = new Shell(window.getDisplay(), SWT.DIALOG_TRIM);
         findRecipeShell.setText("Найти рецепт");
-        window.initLayout(findRecipeShell, 1);
+        window.initLayout(findRecipeShell);
 
         final Composite recipeTitle = new Composite(findRecipeShell, SWT.NONE);
         recipeTitle.setLayout(new GridLayout(2, false));
@@ -150,10 +150,10 @@ class RecipeView {
         findRecipeShell.open();
     }
 
-    private void updateRecipe(final String title) {
+    void updateRecipe(final String title) {
         final Shell updateRecipeShell = new Shell(window.getDisplay(), SWT.DIALOG_TRIM);
         updateRecipeShell.setText("Изменить рецепт");
-        window.initLayout(updateRecipeShell, 1);
+        window.initLayout(updateRecipeShell);
 
         final Recipe foundRecipe = recipeController.getRecipeByTitle(title);
 
@@ -203,7 +203,7 @@ class RecipeView {
         final Table[] newIngredients = new Table[1];
         final Shell recipeShell = new Shell(window.getDisplay(), SWT.DIALOG_TRIM | SWT.CENTER);
         recipeShell.setText(title);
-        window.initLayout(recipeShell, 1);
+        window.initLayout(recipeShell);
 
         Label recipeTitle = new Label(recipeShell, SWT.CENTER);
         recipeTitle.setText(foundRecipe.getTitle());
@@ -280,7 +280,7 @@ class RecipeView {
         recipeShell.open();
     }
 
-    void showRecipes(final User user) {
+    void showRecipes() {
         List<Recipe> recipeList = recipeController.showRecipeList();
         for (Recipe recipe : recipeList) {
             TableItem item = new TableItem(mainTable, SWT.CENTER);
@@ -295,82 +295,12 @@ class RecipeView {
             item.setText(4, recipe.getCookingTime());
         }
         window.getShell().layout();
-
-        mainTable.addListener(SWT.MouseDoubleClick, new Listener() {
-            public void handleEvent(Event event) {
-                if (user.getUsername() != null) {
-                    Point pt = new Point(event.x, event.y);
-                    TableItem item = mainTable.getItem(pt);
-                    if (item == null)
-                        return;
-                    String recipeTitle = item.getText(0);
-                    showRecipe(recipeTitle, user);
-                }
-            }
-        });
-
-        mainTable.addListener(SWT.MouseDown, new Listener() {
-            public void handleEvent(Event event) {
-                if (user.getUsername() != null) {
-                    Point pt = new Point(event.x, event.y);
-                    TableItem item = mainTable.getItem(pt);
-                    if (item == null)
-                        return;
-                    final String recipeTitle = item.getText(0);
-                    MenuItem updateItem = window.getMainMenu().getItem(0).getMenu().getItem(2);;
-                    updateItem.addSelectionListener(new SelectionAdapter() {
-                        @Override
-                        public void widgetSelected(SelectionEvent e) {
-                            updateRecipe(recipeTitle);
-                        }
-                    });
-                }
-            }
-        });
-
-        Listener sortListener = new Listener() {
-            public void handleEvent(Event e) {
-                TableItem[] items = mainTable.getItems();
-                Collator collator = Collator.getInstance(Locale.getDefault());
-                TableColumn column = (TableColumn) e.widget;
-                int index = 0;
-                for (int columnIndex = 0; columnIndex < mainTable.getColumnCount(); columnIndex++) {
-                    if (column == mainTable.getColumn(columnIndex) ) {
-                        index = columnIndex;
-                    }
-                }
-                for (int firstItemIndex = 1; firstItemIndex < items.length; firstItemIndex++) {
-                    String firstItemValue = items[firstItemIndex].getText(index);
-                    for (int secondItemIndex = 0; secondItemIndex < firstItemIndex; secondItemIndex++) {
-                        String secondItemValue = items[secondItemIndex].getText(index);
-                        if (collator.compare(firstItemValue, secondItemValue) < 0) {
-                            List<String> itemValues = new ArrayList<String>();
-                            for (int columnIndex = 0; columnIndex < mainTable.getColumnCount(); columnIndex++) {
-                                itemValues.add(items[firstItemIndex].getText(columnIndex));
-                            }
-                            items[firstItemIndex].dispose();
-                            TableItem item = new TableItem(mainTable, SWT.NONE, secondItemIndex);
-                            for (int columnIndex = 0; columnIndex < mainTable.getColumnCount(); columnIndex++) {
-                                item.setText(columnIndex, itemValues.get(columnIndex));
-                            }
-                            items = mainTable.getItems();
-                            break;
-                        }
-                    }
-                }
-                mainTable.setSortColumn(column);
-            }
-        };
-
-        for (TableColumn column : mainTable.getColumns()) {
-            column.addListener(SWT.Selection, sortListener);
-        }
     }
 
     void deleteRecipe() {
         final Shell deleteRecipeShell = new Shell(window.getDisplay(), SWT.DIALOG_TRIM);
         deleteRecipeShell.setText("Удалить рецепт");
-        window.initLayout(deleteRecipeShell, 1);
+        window.initLayout(deleteRecipeShell);
 
         final Composite recipeTitleComp = new Composite(deleteRecipeShell, SWT.NONE);
         recipeTitleComp.setLayout(new GridLayout(2, false));
@@ -400,6 +330,71 @@ class RecipeView {
 
         deleteRecipeShell.setSize(500 , 300);
         deleteRecipeShell.open();
+    }
+
+    void addTableListeners(final User user) {
+        mainTable.addSelectionListener(new SelectionAdapter() {
+            @Override
+            public void widgetSelected(SelectionEvent e) {
+                if (user.getUsername() != null) {
+                    TableItem item = (TableItem) e.item;
+                    if (item == null)
+                        return;
+                    final String recipeTitle = item.getText(0);
+                    window.setSelectedRecipe(recipeController.getRecipeByTitle(recipeTitle));
+                }
+            }
+        });
+
+        mainTable.addListener(SWT.MouseDoubleClick, new Listener() {
+            public void handleEvent(Event event) {
+                Point pt = new Point(event.x, event.y);
+                TableItem item = mainTable.getItem(pt);
+                if (item == null)
+                    return;
+                String recipeTitle = item.getText(0);
+                showRecipe(recipeTitle, user);
+                mainTable.setSelection(mainTable.getSelectionIndices());
+            }
+        });
+
+        Listener sortListener = new Listener() {
+            public void handleEvent(Event e) {
+                TableItem[] items = mainTable.getItems();
+                Collator collator = Collator.getInstance(Locale.getDefault());
+                TableColumn column = (TableColumn) e.widget;
+                int index = 0;
+                for (int columnIndex = 0; columnIndex < mainTable.getColumnCount(); columnIndex++) {
+                    if (column == mainTable.getColumn(columnIndex)) {
+                        index = columnIndex;
+                    }
+                }
+                for (int firstItemIndex = 1; firstItemIndex < items.length; firstItemIndex++) {
+                    String firstItemValue = items[firstItemIndex].getText(index);
+                    for (int secondItemIndex = 0; secondItemIndex < firstItemIndex; secondItemIndex++) {
+                        String secondItemValue = items[secondItemIndex].getText(index);
+                        if (collator.compare(firstItemValue, secondItemValue) < 0) {
+                            List<String> itemValues = new ArrayList<String>();
+                            for (int columnIndex = 0; columnIndex < mainTable.getColumnCount(); columnIndex++) {
+                                itemValues.add(items[firstItemIndex].getText(columnIndex));
+                            }
+                            items[firstItemIndex].dispose();
+                            TableItem item = new TableItem(mainTable, SWT.NONE, secondItemIndex);
+                            for (int columnIndex = 0; columnIndex < mainTable.getColumnCount(); columnIndex++) {
+                                item.setText(columnIndex, itemValues.get(columnIndex));
+                            }
+                            items = mainTable.getItems();
+                            break;
+                        }
+                    }
+                }
+                mainTable.setSortColumn(column);
+            }
+        };
+
+        for (TableColumn column : mainTable.getColumns()) {
+            column.addListener(SWT.Selection, sortListener);
+        }
     }
 
     Table getMainTable() {

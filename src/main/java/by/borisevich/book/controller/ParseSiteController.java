@@ -15,13 +15,13 @@ import java.util.Map;
 
 public class ParseSiteController {
 
-    private final String SITE_URL = "http://sovkusom.ru/recepty-naznachenie/zakuski/";
+    private final String SITE_URL = "http://sovkusom.ru/recepty-kategoriya/torty/";
     private List<String> recipeUrlList = new ArrayList<String>();
     private RecipeController recipeController = new RecipeController();
 
     public void parseCatalog() {
         int numOfPages = getColOfPages();
-        for (int pageIndex = 1; pageIndex <= numOfPages; pageIndex++) {
+        for (int pageIndex = 1; pageIndex <= 20; pageIndex++) {
             String url = SITE_URL + "page/" + pageIndex;
             Document document = null;
             try {

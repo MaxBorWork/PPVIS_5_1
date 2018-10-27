@@ -2,44 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c6e886a-690d-4121-86f8-67072d0f94fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/user/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/controller/ParseSiteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/ParseSiteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/controller/RegisterController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/controller/StartPageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/dao/RecipeDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/dao/impl/RecipeDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/dao/impl/UserDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/model/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/service/RecipeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/service/impl/RecipeServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/util/HibernateSessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/util/HibernateSessionFactoryUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/recipeBook/view/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/controller/ParseSiteController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/controller/RegisterController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/controller/StartPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/dao/RecipeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/dao/impl/RecipeDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/dao/impl/UserDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/model/Recipe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/service/RecipeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/service/impl/RecipeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/util/HibernateSessionFactoryUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/recipeBook/view/StartPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/book/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/ParseSiteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/RecipeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/RecipeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/UserView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/controller/ParseSiteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/MainWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$6$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/RecipeView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/UserView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/borisevich/book/view/UserView.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -119,29 +108,39 @@
     <session id="1121600974">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="40" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.13" value="4" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.41" value="2" />
           <entry key="project.open.time.42" value="2" />
-          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.46" value="2" />
           <entry key="project.open.time.47" value="2" />
-          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.48" value="2" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.50" value="3" />
+          <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.69" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="22" />
-          <entry key="java" value="9723" />
+          <entry key="java" value="10647" />
           <entry key="sql" value="47" />
           <entry key="txt" value="15" />
           <entry key="xml" value="63" />
@@ -149,7 +148,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9723" />
+          <entry key="JAVA" value="10647" />
           <entry key="PLAIN_TEXT" value="37" />
           <entry key="SQL" value="47" />
           <entry key="XML" value="63" />
@@ -157,16 +156,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="14" />
-          <entry key="java" value="59" />
-          <entry key="xml" value="12" />
+          <entry key="class" value="24" />
+          <entry key="java" value="70" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="14" />
-          <entry key="JAVA" value="59" />
-          <entry key="XML" value="12" />
+          <entry key="CLASS" value="24" />
+          <entry key="JAVA" value="70" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
     </session>
@@ -176,62 +175,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="198">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4866#4867#0" expanded="true" />
-                <element signature="e#4897#4898#0" expanded="true" />
+                <element signature="e#1829#1998#0" expanded="true" />
+                <element signature="e#1997#1998#0" expanded="true" />
+                <element signature="e#2167#2341#0" expanded="true" />
+                <element signature="e#2340#2341#0" expanded="true" />
+                <element signature="e#2507#2781#0" expanded="true" />
+                <element signature="e#2780#2781#0" expanded="true" />
+                <element signature="e#2953#3125#0" expanded="true" />
+                <element signature="e#3124#3125#0" expanded="true" />
+                <element signature="e#3492#3658#0" expanded="true" />
+                <element signature="e#3657#3658#0" expanded="true" />
+                <element signature="e#3952#4193#0" expanded="true" />
+                <element signature="e#4192#4193#0" expanded="true" />
+                <element signature="e#4236#4448#0" expanded="true" />
+                <element signature="e#4447#4448#0" expanded="true" />
+                <element signature="e#4945#4946#0" expanded="true" />
+                <element signature="e#4975#4976#0" expanded="true" />
+                <element signature="e#4999#5000#0" expanded="true" />
+                <element signature="e#5027#5028#0" expanded="true" />
+                <element signature="e#5060#5061#0" expanded="true" />
+                <element signature="e#5091#5092#0" expanded="true" />
+                <element signature="e#5134#5135#0" expanded="true" />
+                <element signature="e#5171#5172#0" expanded="true" />
+                <element signature="e#5231#5232#0" expanded="true" />
+                <element signature="e#5283#5284#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#13859#14341#0" expanded="true" />
+                <element signature="e#14340#14341#0" expanded="true" />
+                <element signature="e#14397#14836#0" expanded="true" />
+                <element signature="e#14835#14836#0" expanded="true" />
+                <element signature="e#14872#16812#0" expanded="true" />
+                <element signature="e#16811#16812#0" expanded="true" />
+                <element signature="e#17368#17369#0" expanded="true" />
+                <element signature="e#17400#17401#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeView.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="152" column="23" lean-forward="true" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6492#7791#0" expanded="true" />
-                <element signature="e#7790#7791#0" expanded="true" />
-                <element signature="e#10984#11863#0" expanded="true" />
-                <element signature="e#11862#11863#0" expanded="true" />
-                <element signature="e#12810#13268#0" expanded="true" />
-                <element signature="e#13267#13268#0" expanded="true" />
-                <element signature="e#13317#14114#0" expanded="true" />
-                <element signature="e#13838#14070#0" expanded="true" />
-                <element signature="e#14069#14070#0" expanded="true" />
-                <element signature="e#14113#14114#0" expanded="true" />
-                <element signature="e#14150#16091#0" expanded="true" />
-                <element signature="e#16090#16091#0" expanded="true" />
-                <element signature="e#16994#17574#0" expanded="true" />
-                <element signature="e#17573#17574#0" expanded="true" />
-                <element signature="e#17690#17691#0" expanded="true" />
-                <element signature="e#17722#17723#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="118" selection-start-line="118" selection-end-line="118" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/UserView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="109" column="43" lean-forward="true" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
+            <state relative-caret-position="286">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -254,10 +255,12 @@
       <find>mainWindow</find>
       <find>updateRecipeShell</find>
       <find>3</find>
+      <find>Ингридиенты</find>
     </findStrings>
     <replaceStrings>
       <replace>window</replace>
       <replace>shell</replace>
+      <replace>Ингредиенты</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -295,16 +298,19 @@
         <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/Recipe.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/FindRecipe.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/RecipeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/ParseSiteController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/RecipeDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/user/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/user/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/user/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/RecipeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/UserView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/MouseListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/CustomMouseListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/ParseSiteController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/RecipeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeForm.java" />
       </list>
     </option>
   </component>
@@ -323,9 +329,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="179" />
-    <option name="y" value="45" />
-    <option name="width" value="1650" />
-    <option name="height" value="1008" />
+    <option name="y" value="10" />
+    <option name="width" value="1648" />
+    <option name="height" value="1007" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -336,7 +342,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -398,13 +403,6 @@
               <item name="book" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lab1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -415,14 +413,14 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539672129972" />
-    <property name="last_opened_file_path" value="$USER_HOME$/java/hibernatedemo" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540669589168" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -481,16 +479,33 @@
       <workItem from="1539624231273" duration="9368000" />
       <workItem from="1539666355235" duration="5513000" />
       <workItem from="1539672964807" duration="2416000" />
+      <workItem from="1539690213692" duration="1005000" />
+      <workItem from="1539691899956" duration="46000" />
+      <workItem from="1539765867611" duration="596000" />
+      <workItem from="1539767067032" duration="3000" />
+      <workItem from="1539774765091" duration="99000" />
+      <workItem from="1540220540551" duration="572000" />
+      <workItem from="1540318847890" duration="631000" />
+      <workItem from="1540321880094" duration="597000" />
+      <workItem from="1540324734753" duration="61000" />
+      <workItem from="1540325406933" duration="142000" />
+      <workItem from="1540410644854" duration="4212000" />
+      <workItem from="1540460575118" duration="773000" />
+      <workItem from="1540475954260" duration="6469000" />
+      <workItem from="1540647328686" duration="349000" />
+      <workItem from="1540664026109" duration="14000" />
+      <workItem from="1540666694187" duration="2893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90550000" />
+    <option name="totallyTimeSpent" value="109012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="-5" width="1841" height="1086" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21031968" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26472238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -539,40 +554,28 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/MainWindow.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/MainWindow.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/ParseSiteController.java</url>
-          <line>97</line>
+          <line>22</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/RecipeController.java</url>
-          <line>65</line>
+          <url>file://$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/ParseSiteController.java</url>
+          <line>44</line>
           <properties />
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeView.java</url>
-          <line>278</line>
-          <properties />
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeView.java</url>
-          <line>320</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeView.java</url>
-          <line>313</line>
-          <properties />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeView.java</url>
-          <line>323</line>
-          <properties />
-          <option name="timeStamp" value="63" />
+          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -582,13 +585,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/swt/gtk/linux/x86/3.3.0-v3346/x86-3.3.0-v3346.jar!/org/eclipse/swt/widgets/Display.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="254" column="11" selection-start-line="254" selection-start-column="11" selection-end-line="254" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/swt/gtk/linux/x86/3.3.0-v3346/x86-3.3.0-v3346.jar!/org/eclipse/swt/widgets/Display.class" />
     <entry file="jar://$PROJECT_DIR$/lib/swt.jar!/org/eclipse/swt/layout/GridData.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2755">
@@ -623,64 +620,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/RecipeService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/ParseSiteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-492">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/StartPageController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/user/RegisterController.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/swt.jar!/org/eclipse/swt/widgets/TypedListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#602#618#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/RecipeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="51" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/swt.jar!/org/eclipse/swt/SWT.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
@@ -695,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/swt.jar!/org/eclipse/swt/widgets/EventTable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/swt.jar!/org/eclipse/swt/widgets/TableColumn.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -709,35 +644,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/RecipeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/user/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/user/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -755,60 +665,190 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeForm.java">
+    <entry file="jar://$PROJECT_DIR$/lib/swt.jar!/org/eclipse/swt/widgets/Listener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        <state relative-caret-position="88">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/swt.jar!/org/eclipse/swt/widgets/Shell.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="1339" selection-start-line="1339" selection-end-line="1339" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="64" lean-forward="true" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/swt.jar!/org/eclipse/swt/widgets/EventTable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/swt.jar!/org/eclipse/swt/events/MouseEvent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/swt.jar!/org/eclipse/swt/widgets/Table.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="831" column="16" selection-start-line="831" selection-start-column="16" selection-end-line="831" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/CustomMouseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/swt.jar!/org/eclipse/swt/widgets/TypedListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1829#1998#0" expanded="true" />
+            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="e#2167#2341#0" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2507#2781#0" expanded="true" />
+            <element signature="e#2780#2781#0" expanded="true" />
+            <element signature="e#2953#3125#0" expanded="true" />
+            <element signature="e#3124#3125#0" expanded="true" />
+            <element signature="e#3492#3658#0" expanded="true" />
+            <element signature="e#3657#3658#0" expanded="true" />
+            <element signature="e#3952#4193#0" expanded="true" />
+            <element signature="e#4192#4193#0" expanded="true" />
+            <element signature="e#4236#4448#0" expanded="true" />
+            <element signature="e#4447#4448#0" expanded="true" />
+            <element signature="e#4945#4946#0" expanded="true" />
+            <element signature="e#4975#4976#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5027#5028#0" expanded="true" />
+            <element signature="e#5060#5061#0" expanded="true" />
+            <element signature="e#5091#5092#0" expanded="true" />
+            <element signature="e#5134#5135#0" expanded="true" />
+            <element signature="e#5171#5172#0" expanded="true" />
+            <element signature="e#5231#5232#0" expanded="true" />
+            <element signature="e#5283#5284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/controller/ParseSiteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/RecipeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1298">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/RecipeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/user/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/recipe/Recipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#13859#14341#0" expanded="true" />
+            <element signature="e#14340#14341#0" expanded="true" />
+            <element signature="e#14397#14836#0" expanded="true" />
+            <element signature="e#14835#14836#0" expanded="true" />
+            <element signature="e#14872#16812#0" expanded="true" />
+            <element signature="e#16811#16812#0" expanded="true" />
+            <element signature="e#17368#17369#0" expanded="true" />
+            <element signature="e#17400#17401#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/UserView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="109" column="43" lean-forward="true" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
+        <state relative-caret-position="-1174">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/MainWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="286">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4866#4867#0" expanded="true" />
-            <element signature="e#4897#4898#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/borisevich/book/view/RecipeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="152" column="23" lean-forward="true" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6492#7791#0" expanded="true" />
-            <element signature="e#7790#7791#0" expanded="true" />
-            <element signature="e#10984#11863#0" expanded="true" />
-            <element signature="e#11862#11863#0" expanded="true" />
-            <element signature="e#12810#13268#0" expanded="true" />
-            <element signature="e#13267#13268#0" expanded="true" />
-            <element signature="e#13317#14114#0" expanded="true" />
-            <element signature="e#13838#14070#0" expanded="true" />
-            <element signature="e#14069#14070#0" expanded="true" />
-            <element signature="e#14113#14114#0" expanded="true" />
-            <element signature="e#14150#16091#0" expanded="true" />
-            <element signature="e#16090#16091#0" expanded="true" />
-            <element signature="e#16994#17574#0" expanded="true" />
-            <element signature="e#17573#17574#0" expanded="true" />
-            <element signature="e#17690#17691#0" expanded="true" />
-            <element signature="e#17722#17723#0" expanded="true" />
           </folding>
         </state>
       </provider>

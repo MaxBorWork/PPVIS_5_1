@@ -20,7 +20,7 @@ class UserView {
     void register() {
         final Shell registerShell = new Shell(window.getDisplay(), SWT.DIALOG_TRIM | SWT.V_SCROLL | SWT.H_SCROLL);
         registerShell.setText("Регистрация");
-        window.initLayout(registerShell, 1);
+        window.initLayout(registerShell);
 
         final Composite loginComposite = new Composite(registerShell, SWT.NONE);
         loginComposite.setLayout(new GridLayout(2, false));
@@ -75,7 +75,7 @@ class UserView {
     void login(final User user) {
         final Shell loginShell = new Shell(window.getDisplay(), SWT.DIALOG_TRIM | SWT.V_SCROLL | SWT.H_SCROLL);
         loginShell.setText("Регистрация");
-        window.initLayout(loginShell, 1);
+        window.initLayout(loginShell);
         User foundUser = new User();
         final Composite loginComposite = new Composite(loginShell, SWT.NONE);
         loginComposite.setLayout(new GridLayout(2, false));

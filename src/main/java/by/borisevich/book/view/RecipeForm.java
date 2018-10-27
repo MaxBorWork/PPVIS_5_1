@@ -117,27 +117,27 @@ class RecipeForm {
         }
     }
 
-    public Text getRecipeTitleText() {
+    Text getRecipeTitleText() {
         return recipeTitleText;
     }
 
-    public Text getRecipeCategoryText() {
+    Text getRecipeCategoryText() {
         return recipeCategoryText;
     }
 
-    public Text getRecipePersonText() {
+    Text getRecipePersonText() {
         return recipePersonText;
     }
 
-    public Text getRecipeTimeText() {
+    Text getRecipeTimeText() {
         return recipeTimeText;
     }
 
-    public Text getRecipeTextText() {
+    Text getRecipeTextText() {
         return recipeTextText;
     }
 
-    public Text getRecipeIngredientsText() {
+    Text getRecipeIngredientsText() {
         return recipeIngredientsText;
     }
 }

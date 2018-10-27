@@ -1,5 +1,6 @@
 package by.borisevich.book.view;
 
+import by.borisevich.book.recipe.Recipe;
 import by.borisevich.book.user.User;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -16,17 +17,18 @@ public class MainWindow {
     private RecipeView recipeView = new RecipeView(this);
     private UserView userView = new UserView(this);
     private User user = new User();
+    private Recipe selectedRecipe = new Recipe();
 
     public MainWindow() {
         shell = new Shell(display);
         shell.setText("Кулинарная книга");
         shell.setSize(820, 600);
 
-        initLayout(shell, 1);
+        initLayout(shell);
         initMenuBar();
         recipeView.initTable();
-        recipeView.showRecipes(user);
-
+        recipeView.showRecipes();
+        recipeView.addTableListeners(user);
         shell.open();
         while (!shell.isDisposed()) {
             if (!display.readAndDispatch()) {
@@ -36,10 +38,10 @@ public class MainWindow {
         display.dispose();
     }
 
-    void initLayout(Shell shell, int numColumns) {
+    void initLayout(Shell shell) {
         GridLayout gridLayout = new GridLayout();
         gridLayout.makeColumnsEqualWidth = false;
-        gridLayout.numColumns = numColumns;
+        gridLayout.numColumns = 1;
         shell.setLayout(gridLayout);
     }
 
@@ -72,6 +74,15 @@ public class MainWindow {
 
         MenuItem editRecipeItem = new MenuItem(recipeSubeMenu, SWT.PUSH);
         editRecipeItem.setText("Изменить");
+        editRecipeItem.addSelectionListener(new SelectionAdapter() {
+            @Override
+            public void widgetSelected(SelectionEvent e) {
+                if (selectedRecipe.getTitle() != null) {
+                    recipeView.updateRecipe(selectedRecipe.getTitle());
+                    selectedRecipe = new Recipe();
+                }
+            }
+        });
 
 
         MenuItem deleteRecipeItem = new MenuItem(recipeSubeMenu, SWT.PUSH);
@@ -135,7 +146,7 @@ public class MainWindow {
 
     void updateShell() {
         recipeView.getMainTable().removeAll();
-        recipeView.showRecipes(user);
+        recipeView.showRecipes();
         shell.layout();
     }
 
@@ -149,5 +160,13 @@ public class MainWindow {
 
     public Menu getMainMenu() {
         return mainMenu;
+    }
+
+    public Recipe getSelectedRecipe() {
+        return selectedRecipe;
+    }
+
+    public void setSelectedRecipe(Recipe selectedRecipe) {
+        this.selectedRecipe = selectedRecipe;
     }
 }
