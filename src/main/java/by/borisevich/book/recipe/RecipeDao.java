@@ -70,16 +70,16 @@ class RecipeDao {
         Session session = sessionFactory.openSession();
         Query query = session.createQuery("from Recipe where title = :paramName");
         query.setParameter("paramName", title);
-        Recipe recipe = (Recipe) query.uniqueResult();
-        if (recipe.getTitle() == null) {
+        List<Recipe> recipeList = (List<Recipe>) query.list();
+        if (recipeList.size() == 0) {
             logger.info("request set is empty");
             return;
         }
         session.beginTransaction();
-        session.delete(recipe);
+        session.delete(recipeList.get(0));
         logger.info("were deleted recipe with motorNumber: " + title);
         session.getTransaction().commit();
         session.close();
-        logger.info("recipe " + recipe.getTitle() + " deleted successfully");
+        logger.info("recipe " + recipeList.get(0).getTitle() + " deleted successfully");
     }
 }

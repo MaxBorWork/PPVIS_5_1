@@ -54,8 +54,9 @@ public class MainWindow {
         Menu recipeSubeMenu = new Menu(shell, SWT.DROP_DOWN);
         recipeItem.setMenu(recipeSubeMenu);
 
-        MenuItem addRecipeItem = new MenuItem(recipeSubeMenu, SWT.PUSH);
+        final MenuItem addRecipeItem = new MenuItem(recipeSubeMenu, SWT.PUSH);
         addRecipeItem.setText("Добавить");
+        addRecipeItem.setEnabled(false);
         addRecipeItem.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {
@@ -72,8 +73,9 @@ public class MainWindow {
             }
         });
 
-        MenuItem editRecipeItem = new MenuItem(recipeSubeMenu, SWT.PUSH);
+        final MenuItem editRecipeItem = new MenuItem(recipeSubeMenu, SWT.PUSH);
         editRecipeItem.setText("Изменить");
+        editRecipeItem.setEnabled(false);
         editRecipeItem.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {
@@ -85,8 +87,9 @@ public class MainWindow {
         });
 
 
-        MenuItem deleteRecipeItem = new MenuItem(recipeSubeMenu, SWT.PUSH);
+        final MenuItem deleteRecipeItem = new MenuItem(recipeSubeMenu, SWT.PUSH);
         deleteRecipeItem.setText("Удалить");
+        deleteRecipeItem.setEnabled(false);
         deleteRecipeItem.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {
@@ -121,6 +124,9 @@ public class MainWindow {
                 user = new User();
                 updateShell();
                 logoutItem.setEnabled(false);
+                addRecipeItem.setEnabled(false);
+                editRecipeItem.setEnabled(false);
+                deleteRecipeItem.setEnabled(false);
             }
         });
 
@@ -129,6 +135,9 @@ public class MainWindow {
             public void widgetSelected(SelectionEvent e) {
                 userView.login(user);
                 logoutItem.setEnabled(true);
+                addRecipeItem.setEnabled(true);
+                editRecipeItem.setEnabled(true);
+                deleteRecipeItem.setEnabled(true);
             }
         });
 

@@ -74,7 +74,7 @@ class UserView {
 
     void login(final User user) {
         final Shell loginShell = new Shell(window.getDisplay(), SWT.DIALOG_TRIM | SWT.V_SCROLL | SWT.H_SCROLL);
-        loginShell.setText("Регистрация");
+        loginShell.setText("Вход");
         window.initLayout(loginShell);
         User foundUser = new User();
         final Composite loginComposite = new Composite(loginShell, SWT.NONE);

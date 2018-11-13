@@ -251,7 +251,7 @@ class RecipeView {
         final Text requestColOfPersonText = window.createTextField(requestColOfPerson, requestColOfPersonLabel,
                 "персон");
         final Button calculateButton = new Button(requestColOfPerson, SWT.PUSH);
-        calculateButton.setText("Посчитать");
+        calculateButton.setText("Рассчитать");
         calculateButton.setSize(100, 150);
 
         calculateButton.addSelectionListener(new SelectionAdapter() {
